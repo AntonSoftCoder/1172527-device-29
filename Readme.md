@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Антон](https://up.htmlacademy.ru/htmlcss/29/user/1172527).
-* Наставник: `Неизвестно`.
+* Наставник: `Егор Глебов (https://htmlacademy.ru/profile/beast)`.
 
 ---
 
