@@ -6,34 +6,30 @@
   </head>
   <body>
     <header>
+      <a href="index.html">
+        <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Device logo" />
+      </a>
       <nav>
-        <a>
-          <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Device logo" />
-        </a>
-        <form action="" method="GET">
-        <div class="">
-          <input type="text" placeholder="Поиск по сайту">
-          <button class="" title="Поиск" type="submit"></button>
-        </div>
-        </form>
-        <ul>
-          <li>
-            <a class="" href="">
-              <span>Валентин Петухов</span>
-            </a>
-            <a class="" href="">Выйти</a>
-          </li>
-          <li>
+        <div>
+          <form action="" method="GET">
+            <input type="text" placeholder="Поиск по сайту">
+            <button class="" title="Поиск" type="submit">Поиск</button>
+          </form>
+          <div>
+            <div>
+              <a class="" href="">
+                <span>Валентин Петухов</span>
+              </a>
+              <a class="" href="">Выйти</a>
+            </div>
             <a href="">
               <span>Сравнить</span>
             </a>
-          </li>
-          <li>
             <a class="" href="#">
               <span>Корзина</span>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
         <ul>
           <li><a href="blank.html">Каталог товаров</a></li>
           <li><a href="blank.html">доставка</a></li>
@@ -42,7 +38,7 @@
         </ul>
         <ul>
           <li><a href="">Виртуальная реальность</a></li>
-          <li><a href="">Моноподы для селфи</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
           <li><a href="">Экшн-камеры</a></li>
           <li><a href="">Фитнес-браслеты</a></li>
           <li><a href="">Умные часы</a></li>
@@ -53,36 +49,30 @@
     <main>
       <h1 class="visually-hidden">Каталог товаров</h1>
       <section class="category">
-          <h2 class="category__title">Моноподы для селфи</h2>
-          <ul>
-            <li>
-              <a class="" href="index.html">
-                <span>Главная</span>
-              </a>
-            </li>
-            <li>
-              <a class="" href="">
-                <span>Каталог товаров</span>
-              </a>
-            </li>
-            <li>
-              <a class="" href="">
-                <span>Моноподы для селфи</span>
-              </a>
-            </li>
-          </ul>
+        <h2 class="category__title">Моноподы для селфи</h2>
+        <ul>
+          <li>
+            <a class="" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a class="" href="">Каталог товаров</a>
+          </li>
+          <li>
+            <a class="" href="">Моноподы для селфи</a>
+          </li>
+        </ul>
       </section>
       <section class="filtr">
           <h3 class="">Фильтр:</h3>
           <form>
-            <div class="slidecontainer">
+            <div class="slide-container">
               <p>Стоимость</p>
-              <input type="range" min="0" max="10000" value="5000" class="" id="myRange">
-              <label></label>
-              <input type="range" min="0" max="10000" value="5000" class="" id="myRange">
-              <label></label>
+              <input type="range" min="0" max="10000" value="0" class="" id="range1">
+              <label for="range1">От</label>
+              <input type="range" min="0" max="10000" value="5000" class="" id="range2">
+              <label for="range2">До</label>
             </div>
-            <div class="checkboxcontainer">
+            <div class="checkbox-container">
               <p>Цвет</p>
               <input type="checkbox" id="black" name="Чёрный" checked>
               <label for="black">Чёрный</label>
@@ -95,7 +85,7 @@
               <input type="checkbox" id="pink" name="Розовый">
               <label for="pink">Розовый</label>
           </div>
-          <div class="radiobutton">
+          <div class="radio-button">
               <p>Bluetooth</p>
               <input type="radio" id="yes" name="bluetooth" value="Есть" checked>
               <label for="yes">Есть</label>
@@ -133,7 +123,7 @@
                   </div>
                 </div>
                 <div>
-                  <span>Любительская селфи-палка</span>
+                  <h3>Любительская селфи-палка</h3>
                   <span>1100 руб.</span>
                 </div>
             </li>
@@ -146,7 +136,7 @@
                   </div>
                 </div>
                 <div>
-                  <p>Профессиональная селфи-палка</p>
+                  <h3>Профессиональная селфи-палка</h3>
                   <span>1500 руб.</span>
                 </div>
             </li>
@@ -159,7 +149,7 @@
                   </div>
                 </div>
                 <div>
-                  <p>Непотопляемая селфи-палка</p>
+                  <h3>Непотопляемая селфи-палка</h3>
                   <span>1500 руб.</span>
                 </div>
             </li>
@@ -172,7 +162,7 @@
                   </div>
                 </div>
                 <div>
-                    <p>Селфи-палка "Следуй за мной"</p>
+                    <h3>Селфи-палка "Следуй за мной"</h3>
                     <span>1900 руб.</span>
                 </div>
             </li>
@@ -203,6 +193,8 @@
           <a class="" href="">
             <span>Валентин Петухов</span>
           </a>
+        </li>
+        <li>
           <a class="" href="">Выйти</a>
         </li>
         <li>
@@ -215,13 +207,13 @@
             <span>Корзина</span>
         </li>
       </ul>
-      <a>
+      <a href="index.html">
         <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Device logo" />
       </a>
       <div>
-        <span>
+        <address>
           г.Москва, ул.Строителей, 15
-        </span>
+        </address>
         <ul>
           <li><a href="blank.html">доставка</a></li>
           <li><a href="blank.html">гарантия</a></li>
@@ -232,9 +224,9 @@
         </span>
       </div>
       <ul class="social">
-        <li class="social social--facebook"><a href=""></a></li>
-        <li class="social social--youtube"><a href=""></a></li>
-        <li class="social social--twitter"><a href=""></a></li>
+        <li class="social social--facebook"><a href="https://ru-ru.facebook.com/htmlacademy">Мы на Facebook</a></li>
+        <li class="social social--youtube"><a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы на Youtube</a></li>
+        <li class="social social--twitter"><a href="https://twitter.com/htmlacademy_en">Мы на Twitter</a></li>
       </ul>
       <p>
         <span class="visually-hidden">Разработано:</span>
