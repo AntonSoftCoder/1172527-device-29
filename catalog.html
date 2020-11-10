@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,18 +15,26 @@
           <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип магазина Device">
         </a>
         <div class="nav__bar header-bar">
-          <form class="header-bar__search" action="https://echo.htmlacademy.ru/" method="GET">
-            <input class="header-bar__text" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+          <form class="header-bar__search search" action="https://echo.htmlacademy.ru/" method="GET">
+            <div class="button-small search__wrapper">
+              <input class="search__text" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+              <button class="search__button" type="submit">Найти</button>
+            </div>
           </form>
           <div class="header-bar__options customer-option">
-            <ul class="customer-option__list">
+            <ul class="button-small customer-option__list">
               <li class="customer-option__item customer-option__item--user-account">
                 <a class="customer-option__link" href="">
                   <span class="customer-option__text">Валентин Петухов</span>
                 </a>
               </li>
-              <li class="customer-option__item customer-option__item--login">
+              <li class="customer-option__item customer-option__item--logout">
                 <a class="customer-option__link" href="">Выйти</a>
+              </li>
+              <li class="customer-option__item customer-option__item--login customer-option__item--inactive">
+                <a class="customer-option__link" href="">
+                  <span class="customer-option__text">Войти</span>
+                </a>
               </li>
               <li class="customer-option__item customer-option__item--comparation">
                 <a class="customer-option__link" href="">
@@ -43,19 +52,19 @@
         <div class="nav__menu header-menu">
           <ul class="header-menu__list">
             <li class="header-menu__item header-menu__item--catalog">
-              <a class="button header-menu__link" href="blank.html">Каталог товаров</a>
+              <a class="header-menu__link" href="">Каталог товаров</a>
             </li>
             <li class="header-menu__item header-menu__item--delivery">
-              <a class="button header-menu__link" href="blank.html">доставка</a>
+              <a class="header-menu__link" href="">доставка</a>
             </li>
             <li class="header-menu__item header-menu__item--guarantee">
-              <a class="button header-menu__link" href="blank.html">гарантия</a>
+              <a class="header-menu__link" href="">гарантия</a>
             </li>
             <li class="header-menu__item header-menu__item--contacts">
-              <a class="button header-menu__link" href="blank.html">контакты</a>
+              <a class="header-menu__link" href="">контакты</a>
             </li>
           </ul>
-          <ul class="header-menu__sublist">
+          <ul class="button-small header-menu__sublist">
             <li class="header-menu__subitem header-menu__subitem--glasses">
               <a class="header-menu__sublink" href="">Виртуальная реальность</a>
             </li>
@@ -108,10 +117,10 @@
               </div>
               <div class="device-price__controls">
                 <label class="device-price__min-price">
-                  от <input type="number" name="min-price" value="0">
+                  от <input class="device-price__min-value" type="number" name="min-price" value="0">
                 </label>
                 <label class="device-price__max-price">
-                  до <input type="number" name="max-price" value="10000">
+                  до <input class="device-price__max-value" type="number" name="max-price" value="10000">
                 </label>
               </div>
             </div>
@@ -120,24 +129,24 @@
             <legend class="device-color__title">Цвет</legend>
             <ul class="device-color__list">
               <li class="device-color__item device-color__item--black">
-                <input type="checkbox" id="black" name="Чёрный" checked>
-                <label for="black">Чёрный</label>
+                <input class="device-color__value" type="checkbox" id="black" name="Чёрный" checked>
+                <label class="device-color__text" for="black">Чёрный</label>
               </li>
               <li class="device-color__item device-color__item--white">
-                <input type="checkbox" id="white" name="Белый">
-                <label for="white">Белый</label>
+                <input class="device-color__value" type="checkbox" id="white" name="Белый">
+                <label class="device-color__text" for="white">Белый</label>
               </li>
               <li class="device-color__item device-color__item--navy">
-                <input type="checkbox" id="blue" name="Синий" checked>
-                <label for="blue">Синий</label>
+                <input class="device-color__value" type="checkbox" id="blue" name="Синий" checked>
+                <label class="device-color__text" for="blue">Синий</label>
               </li>
               <li class="device-color__item device-color__item--red">
-                <input type="checkbox" id="red" name="Красный" checked>
-                <label for="red">Красный</label>
+                <input class="device-color__value" type="checkbox" id="red" name="Красный" checked>
+                <label class="device-color__text" or="red">Красный</label>
               </li>
               <li class="device-color__item device-color__item--pink">
-                <input type="checkbox" id="pink" name="Розовый">
-                <label for="pink">Розовый</label>
+                <input class="device-color__value" type="checkbox" id="pink" name="Розовый">
+                <label class="device-color__text" for="pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
@@ -145,42 +154,42 @@
             <legend class="device-function__title">Bluetooth</legend>
             <ul class="device-function__list">
               <li class="device-function__item device-function__item--positive">
-                <input type="radio" id="positive-choice" name="bluetooth" value="Есть" checked>
-                <label for="positive-choice">Есть</label>
+                <input class="device-function__value" type="radio" id="positive-choice" name="bluetooth" value="Есть" checked>
+                <label class="device-function__text" for="positive-choice">Есть</label>
               </li>
               <li class="device-function__item device-function__item--negative">
-                <input type="radio" id="negative-choice" name="bluetooth" value="Нет">
-                <label for="negative-choice">Нет</label>
+                <input class="device-function__value" type="radio" id="negative-choice" name="bluetooth" value="Нет">
+                <label class="device-function__text" for="negative-choice">Нет</label>
               </li>
             </ul>
           </fieldset>
-          <button class="filter-form__submit button" type="submit">Показать</button>
+          <button class="button filter-form__submit" type="submit">Показать</button>
         </form>
       </section>
       <section class="catalog-page__sort sort">
         <h2 class="sort__title">Сортировка:</h2>
           <ul class="sort__param-list">
             <li class="sort__param-item sort__param-item--price">
-              <input type="radio" id="price" name="sorting" value="price">
-              <label for="price">По цене</label>
+              <input class="sort__value sort__value--price" type="radio" id="price" name="sorting" value="price" checked>
+              <label class="sort__text sort__text--price" for="price">По цене</label>
             </li>
             <li class="sort__param-item sort__param-item--type">
-              <input type="radio" id="type" name="sorting" value="type">
-              <label for="type">По типу</label>
+              <input class="sort__value sort__value--type" type="radio" id="type" name="sorting" value="type">
+              <label class="sort__text sort__value--text" for="type">По типу</label>
             </li>
             <li class="sort__param-item sort__param-item--popular">
-              <input type="radio" id="popularity" name="sorting" value="popularity">
-              <label for="popularity">По популярности</label>
+              <input class="sort__value sort__value--popular" type="radio" id="popularity" name="sorting" value="popularity">
+              <label class="sort__text sort__text--popular" for="popularity">По популярности</label>
             </li>
           </ul>
           <ul class="sort__order-list">
-            <li class="sort__order-item sort__order-item--descending">
-              <input type="radio" id="descending" name="ordering" value="descending">
-              <label for="descending">По возрастанию</label>
+            <li class="sort__order-item sort__order-item--up">
+              <input class="sort__value sort__value--up" type="radio" id="up" name="ordering" checked>
+              <label class="sort__text sort__text--up" for="up">По возрастанию</label>
             </li>
-            <li class="sort__order-item sort__order-item--ascending">
-              <input type="radio" id="ascending" name="ordering" value="ascending">
-              <label for="ascending">По убыванию</label>
+            <li class="sort__order-item sort__order-item--down">
+              <input class="sort__value sort__value--down" type="radio" id="down" name="ordering">
+              <label class="sort__text sort__text--down" for="down">По убыванию</label>
             </li>
           </ul>
       </section>
@@ -190,10 +199,11 @@
           <li class="product__item product__item--amateur">
             <div class="product__image-wrapper">
               <img class="product__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Любительская селфи-палка">
-              <div class="product__actions">
-                <button class="button" type="button">В корзину</button>
-                <button class="button-small" type="button">Добавить к сравнению</button>
-              </div>
+              <span class="product__mark">New</span>
+            </div>
+            <div class="product__actions">
+              <button class="product__add-button" type="button">В корзину</button>
+              <button class="product__compare-button" type="button">Добавить к сравнению</button>
             </div>
             <div class="product__name-wrapper">
               <h3 class="product__name">Любительская селфи-палка</h3>
@@ -203,10 +213,11 @@
           <li class="product__item product__item--professional">
             <div class="product__image-wrapper">
               <img class="product__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
-              <div class="product__actions">
-                <button class="button" type="button">В корзину</button>
-                <button class="button-small" type="button">Добавить к сравнению</button>
-              </div>
+              <span class="product__mark">New</span>
+            </div>
+            <div class="product__actions">
+              <button class="product__add-button" type="button">В корзину</button>
+              <button class="product__compare-button" type="button">Добавить к сравнению</button>
             </div>
             <div class="product__name-wrapper">
               <h3 class="product__name">Профессиональная селфи-палка</h3>
@@ -216,10 +227,11 @@
           <li class="product__item product__item--unsinkable">
             <div class="product__image-wrapper">
               <img class="product__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <div class="product__actions">
-                <button class="button" type="button">В корзину</button>
-                <button class="button-small" type="button">Добавить к сравнению</button>
-              </div>
+              <span class="product__mark">New</span>
+            </div>
+            <div class="product__actions">
+              <button class="product__add-button" type="button">В корзину</button>
+              <button class="product__compare-button" type="button">Добавить к сравнению</button>
             </div>
             <div class="product__name-wrapper">
               <h3 class="product__name">Непотопляемая селфи-палка</h3>
@@ -227,16 +239,17 @@
             </div>
           </li>
           <li class="product__item product__item--branded">
-            <div class="product__image-wrap per">
+            <div class="product__image-wrapper">
               <img class="product__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка &#34;Следуй за мной&#34;">
-              <div class="product__actions">
-                <button class="button" type="button">В корзину</button>
-                <button class="button-small" type="button">Добавить к сравнению</button>
-              </div>
+              <span class="product__mark">New</span>
+            </div>
+            <div class="product__actions">
+              <button class="product__add-button" type="button">В корзину</button>
+              <button class="product__compare-button" type="button">Добавить к сравнению</button>
             </div>
             <div class="product__name-wrapper">
-                <h3 class="product__name">Селфи-палка "Следуй за мной"</h3>
-                <span class="product__price">1900 руб.</span>
+              <h3 class="product__name">Селфи-палка "Следуй за мной"</h3>
+              <span class="product__price">1900 руб.</span>
             </div>
           </li>
         </ul>
@@ -262,14 +275,19 @@
     <footer class="core__footer footer-page">
       <h2 class="footer-page__title visually-hidden">Панель клиента</h2>
       <div class="footer-page__customer-bar customer-bar">
-        <ul class="customer-bar__list">
+        <ul class="button-small customer-bar__list">
           <li class="customer-bar__item customer-bar__item--account">
             <a class="customer-bar__link" href="">
               <span>Валентин Петухов</span>
             </a>
           </li>
-          <li class="customer-bar__item customer-bar__item--login">
+          <li class="customer-bar__item customer-bar__item--logout">
             <a class="customer-bar__link" href="">Выйти</a>
+          </li>
+          <li class="customer-bar__item customer-bar__item--login customer-bar__item--inactive">
+            <a class="customer-bar__link" href="">
+              <span class="customer-bar__text">Войти</span>
+            </a>
           </li>
           <li class="customer-bar__item customer-bar__item--comparation">
             <a class="customer-bar__link" href="">
@@ -287,11 +305,11 @@
         <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип магазина Device" />
       </a>
       <div class="footer-page__info footer-info">
-        <address class="footer-info__address">
+        <address class="button-small footer-info__address">
           г.Москва, ул.Строителей, 15
         </address>
         <div class="footer-info__menu footer-menu">
-          <ul class="footer-menu__list">
+          <ul class="button footer-menu__list">
             <li class="footer-menu__item footer-menu__item--delivery">
               <a class="button footer-menu__link" href="blank.html">доставка</a>
             </li>
@@ -303,7 +321,7 @@
             </li>
           </ul>
         </div>
-        <p class="footer-info__phone">
+        <p class="button-small footer-info__phone">
           <a class="footer-info__phone-link" href="tel:+74954959595">Тел.: +7(495) 495-95-95</a>
         </p>
       </div>

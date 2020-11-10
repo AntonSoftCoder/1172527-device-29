@@ -1,36 +1,45 @@
-@font-face {
-  font-family: 'Gilroy Extra Bold';
-  font-style: normal;
+ @font-face {
+  font-family: 'Gilroy';
   font-weight: 800;
-  src: local('Gilroy Extra Bold'),
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  src: local('Gilroy'), local('Gilroy Extra-bold'),
   url('../fonts/gilroyextrabold.woff2') format('woff2'),
   url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Gilroy Light';
-  font-style: normal;
+  font-family: 'Gilroy';
   font-weight: 300;
-  src: local('Gilroy Light'),
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  src: local('Gilroy'), local('Gilroy-Light'),
   url('../fonts/gilroylight.woff2') format('woff2'),
   url('../fonts/gilroylight.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Open Sans';
+  font-weight: 300;
   font-style: normal;
-  font-weight: 800;
-  src: local('Open Sans'), local('Open Sans Extra-bold'),
+  font-stretch: normal;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+  url('../fonts/opensanslight.woff2') format('woff2'),
+  url('../fonts/opensanslight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  src: local('Open Sans'), local('OpenSans'),
   url('../fonts/opensans.woff2') format('woff2'),
   url('../fonts/opensans.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Open Sans Light';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'),
-  url('../fonts/opensanslight.woff2') format('woff2'),
-  url('../fonts/opensanslight.woff') format('woff');
-}
 

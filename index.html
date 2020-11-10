@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,11 +15,22 @@
           <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип магазина Device">
         </a>
         <div class="nav__bar header-bar">
-          <form class="header-bar__search" action="https://echo.htmlacademy.ru/" method="GET">
-            <input class="header-bar__text" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+          <form class="header-bar__search search" action="https://echo.htmlacademy.ru/" method="GET">
+            <div class="button-small search__wrapper">
+              <input class="search__text" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+              <button class="search__button" type="submit">Найти</button>
+            </div>
           </form>
           <div class="header-bar__options customer-option">
-            <ul class="customer-option__list">
+            <ul class="button-small customer-option__list">
+              <li class="customer-option__item customer-option__item--user-account customer-option__item--inactive">
+                <a class="customer-option__link" href="">
+                  <span class="customer-option__text">Валентин Петухов</span>
+                </a>
+              </li>
+              <li class="customer-option__item customer-option__item--logout customer-option__item--inactive">
+                <a class="customer-option__link" href="">Выйти</a>
+              </li>
               <li class="customer-option__item customer-option__item--login">
                 <a class="customer-option__link" href="">
                   <span class="customer-option__text">Войти</span>
@@ -41,19 +52,19 @@
         <div class="nav__menu header-menu">
           <ul class="header-menu__list">
             <li class="header-menu__item header-menu__item--catalog">
-              <a class="button header-menu__link" href="blank.html">Каталог товаров</a>
+              <a class="header-menu__link" href="blank.html">Каталог товаров</a>
             </li>
             <li class="header-menu__item header-menu__item--delivery">
-              <a class="button header-menu__link" href="blank.html">доставка</a>
+              <a class="header-menu__link" href="blank.html">доставка</a>
             </li>
             <li class="header-menu__item header-menu__item--guarantee">
-              <a class="button header-menu__link" href="blank.html">гарантия</a>
+              <a class="header-menu__link" href="blank.html">гарантия</a>
             </li>
             <li class="header-menu__item header-menu__item--contacts">
-              <a class="button header-menu__link" href="#contacts">контакты</a>
+              <a class="header-menu__link" href="#contacts">контакты</a>
             </li>
           </ul>
-          <ul class="header-menu__sublist">
+          <ul class="button-small header-menu__sublist">
             <li class="header-menu__subitem header-menu__subitem--glasses">
               <a class="header-menu__sublink" href="">Виртуальная реальность</a>
             </li>
@@ -83,8 +94,8 @@
           <ul class="slider-banner__list">
             <li class="slider-banner__item slider-banner__item--monopod">
               <img class="slider-banner__image" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Селфи-палка">
-              <h2 class="slider-banner__title">Делай селфи,<br> как Бен Стиллер!</h2>
-              <p class="slider-banner__description">
+              <h2 class="slider-banner__title">Делай селфи,<br>как Бен Стиллер!</h2>
+              <p class="button-small slider-banner__description">
                 Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
@@ -107,7 +118,7 @@
             <li class="slider-banner__item slider-banner__item--bracelet">
               <img class="slider-banner__image" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Браслет">
               <h2 class="slider-banner__title">Худеем<br>правильно!</h2>
-              <p class="slider-banner__description">
+              <p class="button-small slider-banner__description">
                 Мотивирующие фитнес браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </p>
               <a class="button slider-banner__button" href="#">Подробнее</a>
@@ -121,7 +132,7 @@
             <li class="slider-banner__item slider-banner__item--quadrocopter">
               <img class="slider-banner__image" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Квадрокоптер">
               <h2 class="slider-banner__title">Порхает как бабочка,<br> жалит как пчела!</h2>
-              <p class="slider-banner__description">
+              <p class="button-small slider-banner__description">
                 Этот обычный на первый взгляд квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p>
               <a class="button slider-banner__button" href="#">Подробнее</a>
@@ -149,38 +160,38 @@
         <ul class="category__list">
           <li class="category__item category__item--glasses">
             <a class="category__link" href="">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Виртуальная реальность">
-              <span>Виртуальная реальность</span>
+              <img class="category__image" src="https://via.placeholder.com/160x160" width="160" height="160" alt="Виртуальная реальность">
+              <span class="category__text">Виртуальная реальность</span>
             </a>
           </li>
           <li class="category__item category__item--monopod">
             <a class="category__link" href="catalog.html">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Моноподы для селфи">
-              <span>Моноподы для селфи</span>
+              <img class="category__image" src="https://via.placeholder.com/160x160" width="160" height="160" alt="Моноподы для селфи">
+              <span class="category__text">Моноподы для селфи</span>
             </a>
           </li>
           <li class="category__item category__item--camera">
             <a class="category__link" href="">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Экшн-камеры">
-              <span>Экшн-камеры</span>
+              <img class="category__image" src="https://via.placeholder.com/160x160" width="160" height="160" alt="Экшн-камеры">
+              <span class="category__text">Экшн-камеры</span>
             </a>
           </li>
           <li class="category__item category__item--bransolet">
             <a class="category__link" href="">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Фитнес-браслеты">
-              <span>Фитнес-браслеты</span>
+              <img class="category__image" src="https://via.placeholder.com/160x160" width="160" height="160" alt="Фитнес-браслеты">
+              <span class="category__text">Фитнес-браслеты</span>
             </a>
           </li>
           <li class="category__item category__item--watch">
             <a class="category__link" href="">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Умные часы">
-              <span>Умные часы</span>
+              <img class="category__image" src="https://via.placeholder.com/160x160" width="160" height="160" alt="Умные часы">
+              <span class="category__text">Умные часы</span>
             </a>
           </li>
           <li class="category__item category__item--quadrocopter">
             <a class="category__link" href="">
-              <img src="https://via.placeholder.com/160x160" width="160" height="160" alt="Квадрокоптеры">
-              <span>Квадрокоптеры</span>
+              <img class="category__image" src="https://via.placeholder.com/160x160" width="160" height="160" alt="Квадрокоптеры">
+              <span class="category__text">Квадрокоптеры</span>
             </a>
           </li>
         </ul>
@@ -247,8 +258,8 @@
       </section>
       <section class="main-page__about-us about-us">
         <h2 class="about-us__title">О нас</h2>
-        <p class="about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about-us__transport">Мы можем доставить ваш товар в самые отдалённые точки России! работает со многими транспортными компаниями:</p>
+        <p class="button-small about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="button-small about-us__transport">Мы можем доставить ваш товар в самые отдалённые точки России! работает со многими транспортными компаниями:</p>
         <ul class="about-us__transport-list">
           <li class="about-us__transport-item about-us__transport-item--lines">
             <a class="about-us__transport-link" href="https://www.dellin.ru/" target="_blank">Деловые линии</a>
@@ -260,11 +271,11 @@
             <a class="about-us__transport-link" href="https://www.jde.ru/" target="_blank">ЖелДорЭкспедиция</a>
           </li>
         </ul>
-        <a class="button about-us__details" href="">Подробнее о нас</a>
+        <a class="button about-us__details-link" href="">Подробнее о нас</a>
       </section>
       <section class="main-page__contacts contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p class="button-small contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="contacts__map">
           <img src="https://via.placeholder.com/560x222" width="560" height="222" alt="Наш офис на карте">
         </div>
@@ -274,7 +285,15 @@
     <footer class="core__footer footer-page">
       <h2 class="footer-page__title visually-hidden">Панель клиента</h2>
       <div class="footer-page__customer-bar customer-bar">
-        <ul class="customer-bar__list">
+        <ul class="button-small customer-bar__list">
+          <li class="customer-bar__item customer-bar__item--account customer-bar__item--inactive">
+            <a class="customer-bar__link" href="">
+              <span>Валентин Петухов</span>
+            </a>
+          </li>
+          <li class="customer-bar__item customer-bar__item--logout customer-bar__item--inactive">
+            <a class="customer-bar__link" href="">Выйти</a>
+          </li>
           <li class="customer-bar__item customer-bar__item--login">
             <a class="customer-bar__link" href="">
               <span class="customer-bar__text">Войти</span>
@@ -296,23 +315,23 @@
         <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип магазина Device">
       </a>
       <div class="footer-page__info footer-info">
-        <address class="footer-info__address">
+        <address class="button-small footer-info__address">
           г.Москва, ул.Строителей, 15
         </address>
         <div class="footer-info__menu footer-menu">
-          <ul class="footer-menu__list">
+          <ul class="button footer-menu__list">
             <li class="footer-menu__item footer-menu__item--delivery">
-              <a class="button footer-menu__link" href="blank.html">доставка</a>
+              <a class="footer-menu__link" href="blank.html">доставка</a>
             </li>
             <li class="footer-menu__item footer-menu__item--guarantee">
-              <a class="button footer-menu__link" href="blank.html">гарантия</a>
+              <a class="footer-menu__link" href="blank.html">гарантия</a>
             </li>
             <li class="footer-menu__item footer-menu__item--contacts">
-              <a class="button footer-menu__link" href="blank.html">контакты</a>
+              <a class="footer-menu__link" href="blank.html">контакты</a>
             </li>
           </ul>
         </div>
-        <p class="footer-info__phone">
+        <p class="button-small footer-info__phone">
           <a class="footer-info__phone-link" href="tel:+74954959595">Тел.: +7(495) 495-95-95</a>
         </p>
       </div>
@@ -334,5 +353,30 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">HTML Academy</a>
       </p>
     </footer>
+    <section class="core__correspondence correspondence">
+      <h2 class="correspondence__title visually-hidden">Форма обратной связи с компанией</h2>
+      <form class="correspondence__form contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact-form__name">
+          <label class="contact-form__text contact-form__text--name" for="user-name">Ваше имя:</label>
+          <input class="contact-form__value contact-form__value--name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-form__mail">
+          <label class="contact-form__text contact-form__text--mail" for="user-mail">Ваш e-mail:</label>
+          <input class="contact-form__value contact-form__value--mail" id="user-mail" type="email" name="user-mail" placeholder="email@example.com">
+        </p>
+        <p class="contact-form__message">
+          <label class="contact-form__text contact-form__text--message" for="user-message">Текст письма:</label>
+          <textarea class="contact-form__value contact-form__value--message" id="user-message" type="password" name="user-message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="contact-form__submit" type="submit">Отправить</button>
+      </form>
+      <button class="correspondence__close" type="button" aria-label="Закрыть">Закрыть</button>
+    </section>
+    <section class="core__modal modal-map">
+      <h2 class=""> Как до нас добраться</h2>
+      <!-- <img src="img/map.png" width="560" height="222" alt="Офис компании по адресу ул.Строителей 15, Москва"> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473454!2d37.52742931576083!3d55.68703400453019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20Rosja%2C%20119311!5e0!3m2!1spl!2spl!4v1604798826845!5m2!1spl!2spl" width="560" height="222" title="Офис компании по адресу ул.Строителей 15, Москва" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>
